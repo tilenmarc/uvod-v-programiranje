@@ -3,7 +3,7 @@ def absolutna_vrednost(x):
         return -x
     else:
         return x
-e
+
 
 def absolutna_vrednost(x):
     if x < 0:
