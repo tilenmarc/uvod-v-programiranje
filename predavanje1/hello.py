@@ -5,5 +5,8 @@ vseh = stolpcev * vrstic
 x = 3
 x = x + 3
 
+
+import math
+
 r = 10
-obseg = 2 * r * pi
+obseg = 2 * r * math.pi
