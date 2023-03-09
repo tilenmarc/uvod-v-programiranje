@@ -25,6 +25,8 @@ def zvezdice2(n):
 
 
 def stevilo_clenov_da_preseze(x):
+    """Vrne stevilo clenov geometrijske vrste,
+    da njihova vsota preseze vrednost x."""
     vsota = 0
     i = 0
     while vsota <= x:
@@ -39,7 +41,7 @@ def prva_zanka_for(niz):
         print(crka)
 
 
-def druga_zanka_range(n):
+def druga_zanka_for_range(n):
     for i in range(n + 1, 1, -2):
         print(i * "*")
 
