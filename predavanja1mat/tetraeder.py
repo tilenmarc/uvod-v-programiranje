@@ -7,6 +7,9 @@ f = 5
 
 
 def ploscina_trikotnika(x, y, z):
+    """Funkicja izpracuna ploscino trikotnika."""
+
+    # uporabim Heronovo formulo
     s = (x + y + z) / 2
     ploscina = (s * (s - x) * (s - y) * (s - z)) ** (1 / 2)
 

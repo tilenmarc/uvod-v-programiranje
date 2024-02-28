@@ -8,6 +8,7 @@ c = 5
 
 
 def ploscina_trikotnika(x, y, z):
+    # ploscino izracunamo s pomocjo Heronove formule
     s = (x + y + z) / 2
     ploscina = (s * (s - x) * (s - y) * (s - z)) ** (1 / 2)
 
