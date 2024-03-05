@@ -13,7 +13,7 @@ def predznak(x):
 def nicle_sinusa(a, b, epsilon=10 ** (-10)):
     """Funkcija naj vrne niclo sinusa
     na intervalu [a, b], kjer predpostavljamo,
-    da sign(sin(a)) != sign(sin(b))"""
+    da predznak(sin(a)) != predznak(sin(b))"""
 
     if b - a < epsilon:
         return (a + b) / 2
