@@ -63,3 +63,25 @@ def uredi_seznam(sez):
     nov_seznam = [najmanjsi] + uredi_seznam(sez[0:indeks] + sez[indeks + 1 :])
 
     return nov_seznam
+
+
+import random
+
+
+def quicksort(sez):
+    if len(sez) <= 1:
+        return sez
+
+    indeks = random.randint(0, len(sez) - 1)
+    pivot = sez[indeks]
+
+    manjsi = []
+    vecji = []
+
+    for el in sez:
+        if el < pivot:
+            manjsi.append(el)
+        if el > pivot:
+            vecji.append(el)
+
+    return quicksort(manjsi) + [pivot] + quicksort(vecji)
