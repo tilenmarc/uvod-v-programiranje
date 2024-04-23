@@ -1,0 +1,6 @@
+[submodule "predavanja9/primer_repoziorija"]
+	path = predavanja9/primer_repoziorija
+	url = https://github.com/tilenmarc/primer_repoziorija.git
+[submodule "predavanja9/primer"]
+	path = predavanja9/primer
+	url = https://github.com/tilenmarc/primer.git
