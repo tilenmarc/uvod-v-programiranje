@@ -27,3 +27,6 @@ def fakulteta_med(n, m):
         return m
 
     return m * fakulteta_med(n, m - 1)
+
+
+prva_rekurzija()
