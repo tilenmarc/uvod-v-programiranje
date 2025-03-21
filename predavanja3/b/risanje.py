@@ -44,7 +44,7 @@ def narisi_vrstico(f, x1, x2, y1, n):
         print("")
         return
 
-    if abs(f(x1, y1)) < 0.2:
+    if abs(f(x1, y1)) < 0.1:
         print("*", end="")
     else:
         print(" ", end="")
@@ -67,12 +67,11 @@ def ponovi(f, n, w, z, x, y):
     w, z = ponovi(f, n - 1, w, z, x, y)
     if w**2 + z**2 > 2:
         return w, z
-    # print(w, z)
+
     return f(w, z, x, y)
 
 
 def mandelbrot_f(w, z, x, y):
-    # print(w, z)
     prva = w**2 - z**2 + x
     druga = 2 * w * z + y
 
@@ -86,5 +85,16 @@ def mandelbrot(x, y):
 
     if w**2 + z**2 > 2:
         return 1
+    else:
+        return 0
+
+
+def mandelbrot2(x, y):
+    w, z = 0, 0
+
+    for _ in range(500):
+        w, z = mandelbrot_f(w, z, x, y)
+        if w**2 + z**2 > 2:
+            return 1
     else:
         return 0
