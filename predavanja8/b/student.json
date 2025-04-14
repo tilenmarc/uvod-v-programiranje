@@ -1,0 +1,14 @@
+{
+    "ime": "Anka Cvetnik",
+    "vpisnaStevilka": 27123456,
+    "visina": 167.8,
+    "prijatelji": [27154321, 27165432],
+    "predmetnik": [
+      {"predmet": "Analiza 1", "ocena": 10},
+      {"predmet": "Algebra 1", "ocena": 10},
+      {
+        "predmet": "Uvod v programiranje",
+        "ocena": null
+      }
+    ]
+  }
