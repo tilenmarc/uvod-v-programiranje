@@ -45,3 +45,9 @@ class AritmeticnoZaporedje:
             self.zacetni_clen == drugo_zap.zacetni_clen
             and self.razlika == drugo_zap.razlika
         )
+
+    def __iter__(self):
+        i = 0
+        while True:
+            yield self[i]
+            i += 1
