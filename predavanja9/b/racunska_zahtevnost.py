@@ -86,7 +86,7 @@ def determinanta_gauss(mat):
 velikosti = []
 casi_izvajanja = []
 
-for i in range(1, 100):
+for i in range(1, 150):
     velikost = i
 
     # seznam = [random.randint(0, 10000000) for _ in range(velikost)]
