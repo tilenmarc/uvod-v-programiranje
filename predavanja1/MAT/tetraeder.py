@@ -8,6 +8,7 @@ def povrsina_teraedra(x, y, z, w, u, v):
 
 
 def ploscina_trik(x, y, z):
+    # uporabimo Heronovo formulo
     s = (x + y + z) / 2
     ploscina_xyz = (s * (s - x) * (s - y) * (s - z)) ** (1 / 2)
 
