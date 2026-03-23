@@ -54,9 +54,10 @@ def oceni_mandelbrot(n):
 
 
 def nakljucni_sprehod(n, m):
+    stevec = 0
+
     for _ in range(n):
         pozicija = 0
-        stevec = 0
         for _ in range(m):
             korak = random.randint(0, 1)
             korak = 2 * korak - 1
@@ -85,6 +86,30 @@ def nakljucni_sprehod_2d(n, m):
                 pozicija_y += korak
 
             if pozicija_x == 0 and pozicija_y == 0:
+                stevec += 1
+                break
+
+    return stevec / n
+
+
+def nakljucni_sprehod_3d(n, m):
+    stevec = 0
+    for _ in range(n):
+        pozicija_x = 0
+        pozicija_y = 0
+        pozicija_z = 0
+        for _ in range(m):
+            korak = 1 if random.random() < 0.5 else -1
+
+            os = random.randrange(3)
+            if os == 0:
+                pozicija_x += korak
+            elif os == 1:
+                pozicija_y += korak
+            else:
+                pozicija_z += korak
+
+            if pozicija_x == 0 and pozicija_y == 0 and pozicija_z == 0:
                 stevec += 1
                 break
 
